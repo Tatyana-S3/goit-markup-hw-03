@@ -17,7 +17,7 @@ p {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
 img {
   display: block;
@@ -39,14 +39,16 @@ img {
 }
 
 .page-header {
-  padding: 24px 156px;
+  padding: 0 156px;
   border-bottom: 1px solid #e7e9fc;
 }
 .page-header .container {
+  width: 1158px;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
   align-items: center;
+  padding: 24px 0;
 }
 .navi {
   display: flex;
@@ -93,20 +95,19 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
 }
 .hero {
   height: 600px;
   background-color: #2e2f42;
   color: #ffffff;
   text-align: center;
+  padding: 188px 0;
 }
 .hidden-hero {
   line-height: 1.07;
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 0.02em;
-  margin-top: 188px;
   margin-bottom: 48px;
   max-width: 496px;
   text-align: center;
@@ -120,9 +121,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: none;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
+  height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .btn-hero:hover,
@@ -150,6 +153,7 @@ img {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 
 .title-name {
@@ -160,13 +164,13 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-
+.feature {
+  padding: 120px 0;
+}
 .feature .container {
   display: flex;
   width: 1158px;
   height: 104px;
-  margin-top: 120px;
-  margin-bottom: 120px;
   align-items: center;
   flex-grow: 1;
 }
@@ -188,7 +192,6 @@ img {
 }
 .title-our-team {
   text-align: center;
-  padding-bottom: 72px;
 }
 .our-team-list {
   display: flex;
@@ -199,11 +202,11 @@ img {
 .team-box {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 .team-info {
   text-align: center;
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .our-portfolio {
@@ -213,7 +216,6 @@ img {
   line-height: 1.11111;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
-  margin-bottom: 72px;
 }
 .portfolio-list {
   display: flex;
@@ -223,7 +225,7 @@ img {
   row-gap: 48px;
 }
 .portfolio-list-item {
-  width: calc((100%-2 * 24px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .portfolio-info {
   padding: 32px 16px;
