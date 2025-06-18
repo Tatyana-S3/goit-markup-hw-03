@@ -48,7 +48,6 @@ img {
   flex-grow: 1;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
 }
 .navi {
   display: flex;
@@ -66,6 +65,7 @@ img {
 }
 .site-nav {
   display: flex;
+  padding: 24px 0;
 }
 .site-nav li:not(:last-child) {
   margin-right: 40px;
